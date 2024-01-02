@@ -4,7 +4,7 @@ void free_all_bs(weights_struct* weights, biases_struct* biases) {
     // weights
     for (int i = 0; i < weights->main_len; i++) {
 
-        for (int j = 0; j < weights->lens[i][0]; j++) {
+        for (int j = 0; j < weights->lens[i][1]; j++) {
 
             free(weights->weights[i][j]);
         }
@@ -132,6 +132,7 @@ void write_to_file(char* file_name, weights_struct* weights, biases_struct* bias
                 fputs(buff, fptr);
             }
         }
+
         fclose(fptr);
     }
 }

@@ -1,0 +1,4 @@
+- weights->lens by som nemusel riesit jak debil, viem, ze kazdy list v tomto liste ma dlzku 2.
+- vyuzit aj druhe cislo z tej normal distribution
+- zmen input tej neural network aby suportovala en-passant, castle, opakovanie tahov...
+- da sa trochu zrychlit ten backpropagation, ze ho rozdelim tak, ako je v pythone
